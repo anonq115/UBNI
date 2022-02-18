@@ -1,0 +1,235 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+
+}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video{
+    margin:0;
+    padding:0;
+    font-size: 16px;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+    position:relative;
+    list-style-type: none;
+}
+
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    
+    vertical-align:baseline;
+    background:transparent;
+}
+/*------the upper css reset boilerplate removes 
+time wasting inner css default rules(headaches)
+please do not
+delete them--------*/
+/*apply styles directly dead on the element not 
+on its parent element for example font-size or color.
+*/
+body {
+    background:var(--base-main-color);
+    margin: 0;
+    padding: 0;
+}
+header{
+width: 100%;
+background: none;
+}
+:root {
+    --basecolor: #EEDED2;
+    --base-main-color: #0C0923;
+    --basemaxwidth-outercontainer:1040px;
+    --base-outercontainer-margin: 0 auto;
+    --base-outer-container-padding:0;
+    --base-leftpadding-alignment:12px;
+    --new-sec-h1font-styles:
+   
+  }
+.header-outer-container{
+    background:rgba(212, 66, 66, 0);
+    margin: 0 auto;
+    padding: 0;
+    max-width: var(--basemaxwidth-outercontainer);
+}
+.nav-inner-container{
+
+    background:rgba(104, 255, 16, 0);
+    padding: 10.5px 27.5px 0 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+ 
+    flex-direction: row;
+}
+.nav-ul-list{    
+display: flex;
+justify-content:space-between;
+align-items:center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    
+}
+
+.logo
+{font-size:19px; color:var(--basecolor);    
+    padding: 4px;
+    margin: -4px;line-height: 50px;
+    font-size: 20px;
+    /*vertical-align: -5px;*/
+}
+
+    
+
+.nav-ul-list a
+{font-size:13.5px;font-weight: 500;
+color:var(--basecolor);    letter-spacing: .2px;    
+padding: 10px 0 10px 10px;
+}
+
+
+
+.main-outercontainer{
+background-color:rgba(255, 0, 0, 0);
+margin: 0 auto;
+max-width: var(--basemaxwidth-outercontainer);
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+
+margin: 0 auto;
+padding: 30px 0 75px;
+
+
+
+}
+.landingpage-innercontainer{
+    margin: 0 auto;
+    padding: 0;
+color: var(--basecolor);
+border: 1px solid var(--basecolor);
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+
+margin: 0 auto;
+
+
+
+}
+.landing-image-wrapper{}
+.landing-heading-wrapper{
+max-width: unset;
+    min-width: 660px;
+    align-items: flex-start;
+    padding: 10.5px 27.5px 0 12px;
+   text-align: left; 
+    min-width: 60px;}
+   
+.landing-heading-wrapper h1{
+    font-size: 30px;text-wrap: break-word;line-height: 1.5556;
+}
+
+.landing-heading-wrapper p{
+    font-size: 13.75px; line-height: 1.5556; }
+.landingpage-innercontainer img {
+    position:relative;  width:100%;}
+    .landing-heading-wrapper button{color:var(--basecolor);
+        margin: 20px 6px 0 0;
+            }
+            
+/*--------*/
+
+.eligibility-outercontainer{max-width: var(--basemaxwidth-outercontainer);
+margin:var(--base-outercontainer-margin);
+padding:var(--base-outer-container-padding);
+}
+.eligibility-ic{padding:var(--base-leftpadding-alignment);
+
+}
+/*--------*/
+.about-outercontainer{ 
+max-width: var(--basemaxwidth-outercontainer);
+margin:var(--base-outercontainer-margin);
+padding:var(--base-outer-container-padding);
+}
+.about-ic{padding:var(--base-leftpadding-alignment);}
+
+/*--------*/
+
+.outercontainer-whyubni{
+
+    max-width: var(--basemaxwidth-outercontainer);
+    margin:var(--base-outercontainer-margin);
+    padding:var(--base-outer-container-padding);
+}
+
+.inner-container-whyubni{padding:var(--base-leftpadding-alignment);}
+
+/* ===============*/
+
+
+.faqs-outercontainer{
+
+    max-width: var(--basemaxwidth-outercontainer);
+    margin:var(--base-outercontainer-margin);
+    padding:var(--base-outer-container-padding);}
+
+.faqs-ic{padding:var(--base-leftpadding-alignment);
+
+
+
+}
+
+
