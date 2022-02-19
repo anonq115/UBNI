@@ -131,10 +131,12 @@ background: none;
     --base-outercontainer-margin: 0 auto;
     --base-outer-container-padding:0;
     --base-leftpadding-alignment:12px;
-    --base-landing-title:;
+    --base-landing-title:700 34.27827300200522px/1.277777777777778 Inter;/**/
     --base-h1-title:;
-    --base-p-:;
-    
+    --base-p-:400 15.09px/1.555555556 ;
+    --base-cta-color:rgb(238 223 211 / 10%);
+    --base-cta-padding:10px 15px 10px 15px;
+    --base-cta-radius:1.5px;
   }
 .header-outer-container{
     background:rgba(212, 66, 66, 0);
@@ -190,7 +192,7 @@ flex-direction: row-reverse;
 align-items: center;
 
 margin: 0 auto;
-padding: 30px 0 75px;
+padding: 85px 0 75px;
 
 
 
@@ -219,24 +221,26 @@ max-width: unset;
     min-width: 60px;}
    
 .landing-heading-wrapper h1{
-    font-size: 36px;
-    line-height: 1.23; 
+   
+    font:var(--base-landing-title);
     text-wrap: break-word;
-    font-family: Inter;
+    
 }
 
 .landing-heading-wrapper p{
-    font-size: 15.09px;
-    font-weight: 400;
-    line-height: 25px;
-     font-family: Inter;
-   font-family: "Helvetica Neue",sans-serif;   
-   /*font-size: 14.75px;
-    line-height: 24px; font-size: 13.75px; line-height: 1.5556;            18 times 1.555555556 or add 10 plus to the font's  px      9 is the original the new one is 10 for paragraphs. for titles its 1.04 times the fonts px*/ }
+    font:var(--base-p-);  
+   }
 .landingpage-innercontainer img {
     position:relative;  width:100%;}
-    .landing-heading-wrapper button{color:var(--basecolor);
+    
+    .landing-heading-wrapper button
+    {color:var(--basecolor);
         margin: 20px 6px 0 0;
+        background-color:var(--base-cta-color); 
+        border:none;
+        border-radius: var(--base-cta-radius);
+        padding:var(--base-cta-padding);
+        
             }
             
 /*------------------------------------------------------*/
