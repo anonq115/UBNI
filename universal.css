@@ -132,8 +132,8 @@ background: none;
     --base-outer-container-padding:0;
     --base-leftpadding-alignment:12px;
     --base-landing-title:700 34.27827300200522px/1.277777777777778 Inter;/**/
-    --base-h1-title:;
-    --base-p-:400 15.09px/1.555555556 ;
+    --base-h1-title:600 25.09px/1.04 Inter;
+    --base-p-:400 15.09px/1.555555556;
     --base-cta-color:rgb(238 223 211 / 10%);
     --base-cta-padding:10px 15px 10px 15px;
     --base-cta-radius:1.5px;
