@@ -6,6 +6,12 @@
     font-weight: 400;
 
 }
+@font-face {
+    font-family: Inter;
+    src: url(fonts/Inter-Medium.ttf);
+    font-style: normal;
+    font-weight: 500;
+}
 
 @font-face {
     
@@ -131,9 +137,9 @@ background: none;
     --base-outercontainer-margin: 0 auto;
     --base-outer-container-padding:0;
     --base-leftpadding-alignment:12px;
-    --base-landing-title:700 34.27827300200522px/1.277777777777778 Inter;/**/
-    --base-h1-title:600 25.09px/1.04 Inter;
-    --base-p-:400 15.09px/1.555555556;
+    --base-landing-title:500 34px/1.04 Inter;/**/
+    --base-h1-title:600 25px/1.04 Inter;
+    --base-p:400 15px/1.555555556;
     --base-cta-color:rgb(238 223 211 / 10%);
     --base-cta-padding:10px 15px 10px 15px;
     --base-cta-radius:1.5px;
