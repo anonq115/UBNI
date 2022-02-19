@@ -137,7 +137,7 @@ background: none;
     --base-outercontainer-margin: 0 auto;
     --base-outer-container-padding:0;
     --base-leftpadding-alignment:12px;
-    --base-landing-title:500 34px/1.04 Inter;/**/
+    --base-landing-title:500 37px/1.04 Inter;/**/
     --base-h1-title:600 25px/1.04 Inter;
     --base-p:400 15px/1.555555556;
     --base-cta-color:rgb(238 223 211 / 10%);
@@ -229,7 +229,7 @@ max-width: unset;
 .landing-heading-wrapper h1{
    
     font:var(--base-landing-title);
-    text-wrap: break-word;
+    max-width: 91%;
     
 }
 
