@@ -1,3 +1,10 @@
+@font-face {
+    
+    font-family: Inter;
+    src: url(fonts/Inter-Regular.ttf);
+    
+
+}   
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -92,8 +99,9 @@ background: none;
     --base-outercontainer-margin: 0 auto;
     --base-outer-container-padding:0;
     --base-leftpadding-alignment:12px;
-    --base-newsec-h1-fontstyles;
-    --base-newsec-p-fontstyles;
+    --base-landing-title:;
+    --base-h1-title:;
+    --base-p-:;
     
   }
 .header-outer-container{
@@ -182,14 +190,15 @@ max-width: unset;
     font-size: 36px;
     line-height: 1.23; 
     text-wrap: break-word;
+    font-family: Inter;
 }
 
 .landing-heading-wrapper p{
     font-size: 15.09px;
     font-weight: 400;
     line-height: 25px;
-   
-   
+     font-family: Inter;
+   font-family: "Helvetica Neue",sans-serif;   
    /*font-size: 14.75px;
     line-height: 24px; font-size: 13.75px; line-height: 1.5556;            18 times 1.555555556 or add 10 plus to the font's  px      9 is the original the new one is 10 for paragraphs. for titles its 1.04 times the fonts px*/ }
 .landingpage-innercontainer img {
