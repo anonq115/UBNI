@@ -286,7 +286,7 @@ max-width: unset;
 
 
 }
-.big-image{
+.full-width-wrapper{
 
 
     position: absolute;
@@ -295,16 +295,13 @@ max-width: unset;
     overflow: var(--sectionBackgroundOverflow);
 
 }
-.overlay{
+.full-width-image{
     position: relative;
     height: 100%;
-    max-height: var(--sectionAngleMaxHeight);
     width: 100%;
     top: 0;
     left: 0;
-    transform-origin: var(--sectionTransformOrigin);
-    transform: skewY(var(--sectionAngle));
-    background: var(--backgroundColor);
+    background: red;
     overflow: hidden;
 }
 
@@ -312,8 +309,8 @@ max-width: unset;
     z-index: 1;
     display: flex;
     justify-content: center;
-margin:var(--base-outercontainer-margin);
-padding:var(--base-outer-container-padding);
+    margin: var(--base-outercontainer-margin);
+    max-width: var(--basemaxwidth-outercontainer);
 }
 .eligibility-ic{padding:var(--base-leftpadding-alignment);
 
