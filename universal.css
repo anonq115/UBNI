@@ -235,7 +235,40 @@ max-width: unset;
 .landingpage-innercontainer img {
     position:relative;  width:100%;}
     
+    
+    
+    
+  /*  .background-self{width:100vw; 
+    height:100%; 
+    position:absolute; 
+    background-color: aqua; 
+    z-index: -999; 
+    left:0; 
+    }
+    */.big-image {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-size: cover;
+  background-position: 50% 50%;
+ background-color:red;
+
+ 
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  
+ right:0;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  
+}
+    
 .landing-heading-wrapper button
+
     
     {color:var(--basecolor);
     margin: 20px 6px 0 0;
@@ -243,12 +276,42 @@ max-width: unset;
     border:none;
     border-radius: var(--base-cta-radius);
     padding:var(--base-cta-padding);
-        
+    
             }
             
 /*------------------------------------------------------*/
 
-.eligibility-outercontainer{max-width: var(--basemaxwidth-outercontainer);
+
+.ghost-container{
+
+
+}
+.big-image{
+
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: var(--sectionBackgroundOverflow);
+
+}
+.overlay{
+    position: relative;
+    height: 100%;
+    max-height: var(--sectionAngleMaxHeight);
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: var(--sectionTransformOrigin);
+    transform: skewY(var(--sectionAngle));
+    background: var(--backgroundColor);
+    overflow: hidden;
+}
+
+.eligibility-outercontainer{position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
 margin:var(--base-outercontainer-margin);
 padding:var(--base-outer-container-padding);
 }
