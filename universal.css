@@ -87,6 +87,9 @@ time, mark, audio, video{
     list-style-type: none;
 }
 
+li,ol {
+
+    font: var(--base-p);}
 
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
@@ -138,8 +141,12 @@ background: none;
     --base-outer-container-padding:0;
     --base-leftpadding-alignment:12px;
     --base-landing-title:500 37px/1.04 Inter;/**/
-    --base-h1-title:600 25px/1.04 Inter;
-    --base-p:400 15px/1.555555556;
+    --base-h1-title:500 25px/1.04 Inter;
+    --base-h2:500 20px/1.04 Inter; /* i did not calculate
+    h2 font size.*/
+    --base-p:400 15px/1.555555556 Inter;
+    --base-answers:400 15px/1.25 Inter;
+    --base-answers-letterspacing:-0.059px;
     --base-cta-color:rgb(238 223 211 / 10%);
     --base-cta-padding:10px 15px 10px 15px;
     --base-cta-radius:1.5px;
@@ -211,7 +218,17 @@ margin: 0 auto;
 /*border: 1px solid var(--basecolor);*/
 
 }
-.landing-image-wrapper{}
+.landing-image-wrapper{
+width:100%;
+
+
+}
+
+.landing-image-wrapper img{
+
+    width: 100%;
+    height: 600px;
+}
 .landing-heading-wrapper{
 max-width: unset;
     min-width: 660px;
@@ -228,7 +245,7 @@ max-width: unset;
 }
 
 .landing-heading-wrapper p{
-    font:var(--base-p);  
+    font :var(--base-p);  
     margin-top: 20px;
    }
 .landingpage-innercontainer img {
@@ -323,29 +340,32 @@ max-width: unset;
 
 .eligibility-ic h1{
 
-font:29px open sans,sans serif;
-font-weight: 600;
+    font:var(--base-h1-title);
 color:var(--base-main-color);
 }
 
 
 .eligibility-ic ol{
 
-    font:17px open sans,sans serif;
-    font-weight: 400;
+   font:(--base-p);
     color:var(--base-main-color);
     }
 .eligibility-ic ul{
 
-    font:17px open sans,sans serif;
-    font-weight: 400;
+    font:var(--base-p);
     color:var(--base-main-color);
     }
 .eligibility-ic p{
 
-    font:17px open sans,sans serif;
-    font-weight: 400;
-    var(--base-main-color);
+    font :var(--base-p);
+    color:var(--base-main-color);
+    
+    }
+    
+    .eligibility-ic h2{
+    font:var(--base-h2);
+    color:var(--base-main-color);
+    
     }
 /*--------*/
 .about-outercontainer{ 
@@ -353,7 +373,21 @@ max-width: var(--basemaxwidth-outercontainer);
 margin:var(--base-outercontainer-margin);
 padding:var(--base-outer-container-padding);
 }
-.about-ic{padding:var(--base-leftpadding-alignment);}
+.about-ic{padding:var(--base-leftpadding-alignment);
+
+}
+
+.about-ic h1 {
+font:var(--base-h1-title);
+color:var(--basecolor);
+
+}
+
+.about-ic p{
+font:var(--basecolor);
+color:var(--basecolor)
+
+}
 
 /*--------*/
 
@@ -365,6 +399,12 @@ padding:var(--base-outer-container-padding);
 }
 
 .inner-container-whyubni{padding:var(--base-leftpadding-alignment);}
+.inner-container-whyubni h1{font:var(--base-h1-title);color:var(--basecolor);}
+.inner-container-whyubni p
+{
+
+font :var(--base-p);color:var(--basecolor);
+}
 
 /* ===============*/
 
@@ -377,6 +417,22 @@ padding:var(--base-outer-container-padding);
 
 .faqs-ic{padding:var(--base-leftpadding-alignment);
 
+
+
+}
+
+.faqs-ic h1{font:var(--base-h1-title);
+
+color:var(--basecolor);
+
+}
+.faqs-ic p{font :var(--base-p);color:var(--basecolor); }
+
+.faqs-ic li{
+    font:var(--base-answers);
+    color: #708090;
+    color: slategray;
+    letter-spacing: var(--base-answers-letterspacing);
 
 
 }
